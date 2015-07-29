@@ -200,13 +200,13 @@ public class Email {
 				Session session = Session.getDefaultInstance(props, new Authenticator(){
 					@Override
 					protected PasswordAuthentication getPasswordAuthentication(){
-						return new PasswordAuthentication("tincan24@gmail.com", "%optimists19");
+						return new PasswordAuthentication("your_email_address", "your_email_password"");
 					}
 				});
 				
 				try{
 					Message message = new MimeMessage(session);
-					message.setFrom(new InternetAddress("tincan24@gmail.com"));
+					message.setFrom(new InternetAddress("your_email_address"));
 					message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipientsField.getText()));
 					message.setSubject(subjectField.getText());
 					//message.setText(msgTxtPane.getText());
