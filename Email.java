@@ -38,8 +38,8 @@ public class Email {
 	//encryption variables
 	byte[] input;
 	byte[] subjInput;
-	byte[] keyBytes = "eastog24".getBytes();
-	byte[] ivBytes = "tinosaur".getBytes();
+	byte[] keyBytes = "aRandKey".getBytes();
+	byte[] ivBytes = "randomiv".getBytes();
 	SecretKeySpec key = new SecretKeySpec(keyBytes, "DES");
 	IvParameterSpec ivSpec = new IvParameterSpec(ivBytes);
 	Cipher cipher;
