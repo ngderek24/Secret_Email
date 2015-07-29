@@ -200,7 +200,7 @@ public class Email {
 				Session session = Session.getDefaultInstance(props, new Authenticator(){
 					@Override
 					protected PasswordAuthentication getPasswordAuthentication(){
-						return new PasswordAuthentication("your_email_address", "your_email_password"");
+						return new PasswordAuthentication("your_email_address", "your_email_password");
 					}
 				});
 				
